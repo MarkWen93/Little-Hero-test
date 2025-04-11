@@ -1,11 +1,18 @@
-'use client';
+// 创建一个单独的 metadata 配置文件
+export const metadata = {
+  title: 'Creating Your Story - Little Hero',
+  description: 'Watch as we create your personalized adventure story.',
+};
 
-import { useParams } from "next/navigation";
-import Link from "next/link";
+interface Props {
+  params: {
+    id: string;
+  };
+}
 
-export default function Page() {
-  const params = useParams();
-  const id = params.id as string;
+// 页面组件
+export default async function Page({ params }: Props) {
+  const id = params.id;
 
   return (
     <main className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
@@ -35,15 +42,6 @@ export default function Page() {
           <p className="mt-4 text-lg text-gray-500">
             Please wait while we prepare your amazing adventure!
           </p>
-        </div>
-        
-        <div className="mt-10 text-center">
-          <Link
-            href="/create/adventure"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-          >
-            Choose Another Adventure
-          </Link>
         </div>
       </div>
     </main>
