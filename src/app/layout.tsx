@@ -23,6 +23,12 @@ export const metadata: Metadata = {
     'custom books',
   ],
   authors: [{ name: 'Little Hero Team' }],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   openGraph: {
     title: 'Little Hero - Create Your Own Hero Story',
     description:
@@ -74,6 +80,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       </head>
       <body className={`min-h-screen bg-slate-50 antialiased`}>{children}</body>
     </html>
