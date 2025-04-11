@@ -1,12 +1,14 @@
 'use client';
 
-import { useParams } from 'next/navigation';
-import { Button } from "@/components/ui/button";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
 export default function StoryPage() {
   const params = useParams();
-  const adventureId = params.adventureId as string;
+  // Ensure adventureId is treated as a string
+  const adventureId = Array.isArray(params.adventureId) 
+    ? params.adventureId[0] 
+    : params.adventureId;
 
   return (
     <main className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
