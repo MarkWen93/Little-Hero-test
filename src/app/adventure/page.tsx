@@ -1,37 +1,37 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const adventures = [
   {
-    id: "moon-mission",
-    title: "Moon Mission",
-    description: "Fly to space and save the day",
-    image: "/images/adventures/moon-mission.png",
+    id: 'moon-mission',
+    title: 'Moon Mission',
+    description: 'Fly to space and save the day',
+    image: '/images/adventures/moon-mission.png',
   },
   {
-    id: "arctic-rescue",
-    title: "Arctic Rescue",
-    description: "Help rescue baby penguins",
-    image: "/images/adventures/arctic-rescue.png",
+    id: 'arctic-rescue',
+    title: 'Arctic Rescue',
+    description: 'Help rescue baby penguins',
+    image: '/images/adventures/arctic-rescue.png',
   },
   {
-    id: "royal-castle",
-    title: "Royal Castle Escape",
-    description: "Outsmart guards and save the day",
-    image: "/images/adventures/royal-castle.png",
+    id: 'royal-castle',
+    title: 'Royal Castle Escape',
+    description: 'Outsmart guards and save the day',
+    image: '/images/adventures/royal-castle.png',
   },
   {
-    id: "dino-time",
-    title: "Dino Time",
-    description: "Befriend dinosaurs in a lost world",
-    image: "/images/adventures/dino-time.png",
+    id: 'dino-time',
+    title: 'Dino Time',
+    description: 'Befriend dinosaurs in a lost world',
+    image: '/images/adventures/dino-time.png',
   },
   {
-    id: "fairy-forest",
-    title: "Fairy Forest",
-    description: "Discover enchanted friends and magic",
-    image: "/images/adventures/fairy-forest.png",
+    id: 'fairy-forest',
+    title: 'Fairy Forest',
+    description: 'Discover enchanted friends and magic',
+    image: '/images/adventures/fairy-forest.png',
   },
 ];
 
@@ -47,23 +47,16 @@ export default function AdventurePage() {
         </p>
 
         <div className="space-y-4">
-          {adventures.map((adventure) => (
+          {adventures.map(adventure => (
             <button
               key={adventure.id}
               className="group w-full overflow-hidden rounded-2xl bg-white p-4 shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:flex sm:items-center sm:gap-4"
             >
               <div className="relative aspect-[2/1] overflow-hidden rounded-lg sm:aspect-square sm:h-24 sm:w-24">
-                <Image
-                  src={adventure.image}
-                  alt={adventure.title}
-                  fill
-                  className="object-cover"
-                />
+                <Image src={adventure.image} alt={adventure.title} fill className="object-cover" />
               </div>
               <div className="mt-4 text-left sm:mt-0">
-                <h3 className="text-xl font-semibold text-navy-900">
-                  {adventure.title}
-                </h3>
+                <h3 className="text-xl font-semibold text-navy-900">{adventure.title}</h3>
                 <p className="text-gray-600">{adventure.description}</p>
               </div>
             </button>
@@ -81,4 +74,4 @@ export default function AdventurePage() {
       </div>
     </main>
   );
-} 
+}

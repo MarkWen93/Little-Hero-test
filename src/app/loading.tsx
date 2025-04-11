@@ -27,10 +27,8 @@ export default function Loading() {
           </div>
         </div>
         <h1 className="mb-4 text-4xl font-bold text-navy-900">Loading...</h1>
-        <p className="text-xl text-gray-700">
-          Please wait while we prepare your content.
-        </p>
+        <p className="text-xl text-gray-700">Please wait while we prepare your content.</p>
       </div>
     </main>
   );
-} 
+}

@@ -11,7 +11,7 @@ export class AppError extends Error {
 
 export function handleError(error: unknown) {
   console.error('Error occurred:', error);
-  
+
   if (error instanceof AppError) {
     return {
       error: {
@@ -43,4 +43,4 @@ export function handleError(error: unknown) {
 
 export function isAppError(error: unknown): error is AppError {
   return error instanceof AppError;
-} 
+}

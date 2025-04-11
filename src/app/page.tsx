@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -18,13 +18,11 @@ export default function Home() {
         </div>
 
         <h1 className="mb-4 text-5xl font-bold text-navy-900">Little Hero</h1>
-        <h2 className="mb-8 text-4xl font-bold text-gray-900">
-          Create Your Own Hero Story
-        </h2>
+        <h2 className="mb-8 text-4xl font-bold text-gray-900">Create Your Own Hero Story</h2>
         <p className="mb-12 text-xl text-gray-700">
-          Stories where your child is the star — not just a character in someone
-          else's book. Build personalized adventures that show them they can dream
-          big, lead boldly, and become the hero of their own life.
+          Stories where your child is the star — not just a character in someone else's book. Build
+          personalized adventures that show them they can dream big, lead boldly, and become the
+          hero of their own life.
         </p>
 
         <div className="flex flex-col gap-6 sm:flex-row sm:justify-center">
