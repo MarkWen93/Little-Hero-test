@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" rx="40" fill="url(#bg-gradient)"/>
+  
+  <!-- 星星 -->
+  <path d="M160 40L168 48L176 40L168 32L160 40Z" fill="#FFD700"/>
+  
+  <!-- 头发 -->
+  <path d="M60 80C60 60 100 50 100 50C140 50 140 60 140 80C140 100 120 110 100 110C80 110 60 100 60 80Z" fill="#4A3000"/>
+  
+  <!-- 脸 -->
+  <circle cx="100" cy="90" r="35" fill="#FFE5D9"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="85" cy="85" r="5" fill="#000000"/>
+  <circle cx="115" cy="85" r="5" fill="#000000"/>
+  
+  <!-- 腮红 -->
+  <circle cx="80" cy="95" r="8" fill="#FF9999" fill-opacity="0.6"/>
+  <circle cx="120" cy="95" r="8" fill="#FF9999" fill-opacity="0.6"/>
+  
+  <!-- 微笑 -->
+  <path d="M85 95C85 95 100 105 115 95" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 衣服 -->
+  <path d="M70 130C70 120 85 115 100 115C115 115 130 120 130 130V140H70V130Z" fill="#FFA500"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B2EBF2"/>
+      <stop offset="100%" stop-color="#FFF8E1"/>
+    </linearGradient>
+  </defs>
+</svg> 
