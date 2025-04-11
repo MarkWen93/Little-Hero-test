@@ -1,19 +1,18 @@
-// 创建一个单独的 metadata 配置文件
-export const metadata = {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: 'Creating Your Story - Little Hero',
   description: 'Watch as we create your personalized adventure story.',
 };
 
-interface Props {
+type Props = {
   params: {
     id: string;
   };
-}
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
-// 页面组件
-export default async function Page({ params }: Props) {
-  const id = params.id;
-
+export default function Page({ params }: Props) {
   return (
     <main className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -37,7 +36,7 @@ export default async function Page({ params }: Props) {
             </div>
           </div>
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Your {id.replace(/-/g, ' ')} story is being created...
+            Your {params.id.replace(/-/g, ' ')} story is being created...
           </h2>
           <p className="mt-4 text-lg text-gray-500">
             Please wait while we prepare your amazing adventure!
