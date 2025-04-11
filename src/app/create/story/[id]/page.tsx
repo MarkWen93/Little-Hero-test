@@ -2,9 +2,8 @@
 
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { FC } from 'react';
 
-const StoryPage: FC = () => {
+export default function Page() {
   const params = useParams();
   const id = params.id as string;
 
@@ -49,6 +48,4 @@ const StoryPage: FC = () => {
       </div>
     </main>
   );
-};
-
-export default StoryPage; 
+} 
