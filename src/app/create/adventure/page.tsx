@@ -44,7 +44,7 @@ export default function AdventurePage() {
 
   const handleContinue = () => {
     if (selectedAdventure) {
-      router.push(`/story/${selectedAdventure}`);
+      router.push(`/create/story/${selectedAdventure}`);
     }
   };
 

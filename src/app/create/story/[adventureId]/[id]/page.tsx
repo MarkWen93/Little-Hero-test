@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function StoryPage() {
-  const params = useParams();
-  const adventureId = params.adventureId as string;
+  const { adventureId } = useParams();
 
   return (
     <main className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
